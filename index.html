@@ -1,0 +1,137 @@
+<!-- gra napisana przy tutorialu z youtube kanał mmtuts video 'How To Create A Game Using JavaScript | Part 1 ..,Part 2.., Part 3. " -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Hero</title>
+  <link rel="stylesheet" href="css/hero.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+</head>
+
+<body>
+  <div class="header">
+    <p>Zagraj w superbohaterów!!</p>
+    <h3>Wybierz swojego bohatera</h3>
+  </div>
+
+  <div class="interface">
+    <a href="#" onclick="gameManager.setGameStart('Superman')">
+      <img class="images" src="img/Superman.Jpg" alt="Superman" />
+      <div class="description">
+        <h3>Superman</h3>
+        <p>
+          Superman: nasilniejszy z mężczyzn, ciało ze stali, posiada supermoce
+          takie jak laser w oczach, rendgen oraz możliwość latania.
+          Najsłabszym jego punktem jest podanie mu kryptonitu przez który
+          traci moc.
+        </p>
+      </div>
+    </a>
+
+    <div class="clear"></div>
+
+    <a href="#" onclick="gameManager.setGameStart('Spider-Man')">
+      <img class="images" src="img/spider-man.jpg" alt="Spider-Man" />
+      <div class="description">
+        <h3>Spider-Man</h3>
+        <p>
+          Spider-Man: Zawdzięcza swoje nadludzkie moce po ukońszeniu przez
+          radioaktywnego pająka. Jego oryginalne moce można podzielić na
+          cztery typy: pajęcza szybkość, pajęczy chwyt, zmysł i siła. Jego
+          ciało jest jednk podatne na uszkodzenia.
+        </p>
+      </div>
+    </a>
+
+    <div class="clear"></div>
+
+    <a href="#" onclick="gameManager.setGameStart('Jean-Grey')">
+      <img class="images" src="img/jean-Grey.jpg" alt="Jean-Grey" />
+      <div class="description">
+        <h3>Jean Grey</h3>
+        <p>
+          Jean Grey: największymi zdolnościami Jean Grey są moce telepatyczne
+          i telekinetyczne. Pozwala jej to czytać oraz przechwytywać myśli,
+          modyfikowąć percepcję fizyczną oraz psychiczną wrogów. potrafi
+          unosic przedmioty, wytwarzać ciepło, generować fale wstrząsowe i
+          inne osłony.
+        </p>
+      </div class="description">
+    </a>
+
+    <div class="clear"></div>
+
+    <a href="#" onclick="gameManager.setGameStart('Batman')">
+      <img class="images" src="img/batman.jpg" alt="Batman" />
+      <div class="description">
+        <h3>Batman</h3>
+        <p>
+          Batman: nie posiada nadprzyrodzonych mocy. Jednakże posiada
+          znakomitą kondycje fizyczną, cechuje go wysoka inteligencja,
+          opanował znajomość psychologii, kryminalistyki, strategii, sztuki
+          walki, mówi wieloma językami. W celu ataku przeciwnika używa broni
+          palnj oraz białej. Ochrania go kostium przed atakami nieprzyjaciela.
+        </p>
+      </div>
+    </a>
+
+    <div class="clear"></div>
+
+  </div>
+
+  <div class="actions"></div>
+
+  <div class="arena">
+    <h1>----ARENA----</h1>
+  </div>
+
+  <div class="enemy">
+    <a href="#" onclick="gameManager.setGameStart('Joker')">
+      <img class="images" src="img.enemy/Joker.jpg" alt="Batman" />
+      <div class="description">
+        <h3>Joker</h3>
+        <p>
+          Joker: największy wróg Batmana. Nieprzewidywalny, cechuje go wysoka inteligencja. Do walki używa różnych
+          gadżetów tj. karty do gry, ładunki wybuchowe, noże, broń palna. Największym i najgrożniejszym wynalazkiem
+          dla
+          jego przeciwników jest tzwJad Jokera na który on jest uodporniony, a u przeciwników może negatywnie działać
+          na ośrodek mózgu i doprowadzić do śmierci.
+        </p>
+      </div>
+    </a>
+    <a href="#" onclick="gameManager.setGameStart('Vulture')">
+      <img class="images" src="img.enemy/vulture.jpg" alt="Vulture" />
+      <div class="description">
+        <h3>Vulture</h3>
+        <p>
+          Vulture: największy wróg Spidr-Man'a. Nie ma wrodzonych mocy, jednak wciąż jest niebezpieczny. Nosi uprząż,
+          która zwiększa jego siłę, zwinność, sprawność i odporność na urazy mechaniczne. Do ataku i obrony używa
+          pistoletów plazmowych oraz granatów. Cechuje go rónież wysoka inteligencja.
+        </p>
+      </div>
+    </a>
+    <a href="#" onclick="gameManager.setGameStart('darkseid')">
+      <img class="images" src="img.enemy/darkseid.jpg" alt="darkseid" />
+      <div class="description">
+        <h3>Darkseid</h3>
+        <p>
+          Darkseid: największy wróg Supermana. Jes niewiarygodnie potężny, jego główną bronią są promienie Omega,
+          czyli
+          wystrzweliwanie z oczu wiązką energii. Nieśmiertelny, wysoka iteligencja oraz nadludzka siła i
+          wytrzymałość.
+        </p>
+      </div>
+    </a>
+  </div>
+
+  <script src="js/gameManager.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/enemy.js"></script>
+</body>
+
+</html>

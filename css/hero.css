@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif, arial;
+
+}
+
+.clear {
+  clear: both;
+}
+
+body {
+  background-color: #393939;
+  max-width: 1300px;
+}
+
+.header {
+  background-color: #111;
+  color: #d04814;
+  font-size: 30px;
+  width: 100vw;
+}
+
+.header h3 {
+  text-align: center;
+}
+
+.header p {
+  color: #fdf7c5;
+  text-align: center;
+}
+
+.interface,
+.enemy {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.interface a {
+  text-decoration: none;
+}
+
+
+img {
+  width: 200px;
+  height: 180px;
+  float: left;
+}
+
+.description {
+  text-align: left;
+  padding-left: 20%;
+}
+
+.description h3 {
+  text-decoration: none;
+  font-size: 25px;
+  color: #d04814;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.description p {
+  text-decoration: none;
+  color: #fdf7c5;
+  font-size: 18px;
+}
+
+.enemy {
+  display: none;
+}
+
+.image {
+  float: left;
+}
+
+.super-hero h3,
+.bad-enemy h3 {
+  font-size: 24px;
+  color: #d04814;
+}
+
+.super-hero ul li,
+.bad-enemy ul li {
+  color: #fdf7c5;
+  font-size: 18px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.actions {
+  background-color: #cc0e08;
+}
+
+.btn-prefight {
+  color: #fdf7c5;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.arena {
+  display: none;
+  background-color: #5f5f61;
+  height: 140px;
+}
+
+.arena h1 {
+  font-size: 40px;
+  letter-spacing: 10px;
+  color: #d04814;
+  text-align: center;
+  padding: 45px 0;
+  font-family: "Satisfy", cursive;
+  width: bold;
+}
+
+.image {
+  margin-right: 10px;
+}
+
+@media(max-width: 500px) {
+  .image {
+    margin-right: 10px;
+    float: none;
+  }
+
+  .arena {
+    height: 100px;
+  }
+}
+
+@media (max-width: 600px) {
+  .arena {
+    height: 120px;
+  }
+
+  .images {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .super-hero-small ul li,
+  .bad-enemy-small ul li {
+    font-size: 15px;
+  }
+
+  .actions {
+    text-align: center;
+  }
+
+  .btn-prefight {
+    margin: 0;
+  }
+
+  .super-hero {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 899.99px) {
+
+  .images {
+    float: left;
+    width: 300px;
+    height: 230px;
+    margin-right: 10px;
+  }
+
+  .image {
+    width: 250px;
+    height: 230px;
+  }
+
+  .description {
+    padding: 0;
+  }
+
+  .description h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .description p {
+    margin: 20px auto;
+    font-size: 16px;
+  }
+
+  .super-hero ul li,
+  .bad-enemy ul li {
+    font-size: 19px;
+  }
+
+  .actions {
+    text-align: center;
+  }
+
+  .i-small {
+    margin-right: 10px;
+  }
+}
+
+@media(min-width: 900px) {
+  .i-small {
+    width: 250px;
+    height: 220px;
+    margin-right: 10px;
+  }
+
+  .actions {
+    text-align: center;
+  }
+}
+
+@media(min-width: 1000px) {
+  .description p {
+    font-size: 21px;
+  }
+}
